@@ -1,16 +1,24 @@
 git init			创建目录
-git add			添加文件到仓库
-git commit		提交文件到仓库 	git commit -m "注释"
+git add				添加文件到仓库
+git commit			提交文件到仓库 		git commit -m "注释"
 git status			查看当前目录下各文件情况
 git diff			查看修改
-git log			查看改动内容	git log --pertty=oneline
+git log				查看改动内容		git log --pertty=oneline
 git reset			版本回退		
-			上个版本 		git reset --hard HEAD^
-			上上个版本	git reset --hard HEAD^^
-			上100个版本	git reset --hard HEAD~100
-			指定版本		git reset --hard 1092sfcsd (commit id)
+				上个版本 		git reset --hard HEAD^
+				上上个版本		git reset --hard HEAD^^
+				上100个版本		git reset --hard HEAD~100
+				指定版本		git reset --hard 1092sfcsd (commit id)
 git reflog			记录每一次命令
-git checkout -- <file>	把文件在工作区的修改全部撤销
-git reset HEAD <file>	把文件在暂存区的修改撤销
-git push origin master	把本地master的最新修改推送至GitHub
+git checkout -- <file>		文件在工作区的修改全部撤销
+git reset HEAD <file>		文件在暂存区的修改撤销
+git push origin master		本地master的最新修改推送至GitHub
 git clone git@github.com:username/name.git	克隆GitHub上的版本库
+git checkout -b <name>		创建并切换分支		“-b”表示创建并切换
+	相当于
+	git branch <name>
+	git checkout <name>
+git branch			查看当前分支		
+git checkout <name>		切换分支
+git merge <name>		合并指定分支到当前分支
+git branch -d <name>		删除指定分支

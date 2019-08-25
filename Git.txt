@@ -24,3 +24,10 @@ git checkout <name>		切换分支
 git merge <name>		合并指定分支到当前分支	
 				可留下历史记录		git merge --no-ff -m "注释“ name	禁用Fast forward
 git branch -d <name>		删除指定分支
+git stash			保存当前未添加的文件
+				查看			git stash list
+git stash pop			恢复并删除stashneirong
+	相当于
+	git stash apply		恢复指定stash		git stash apply stash@{*}	
+	git stash drop
+

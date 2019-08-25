@@ -21,5 +21,6 @@ git checkout -b <name>		创建并切换分支		“-b”表示创建并切换
 	git checkout <name>
 git branch			查看当前分支		
 git checkout <name>		切换分支
-git merge <name>		合并指定分支到当前分支
+git merge <name>		合并指定分支到当前分支	
+				可留下历史记录		git merge --no-ff -m "注释“ name	禁用Fast forward
 git branch -d <name>		删除指定分支

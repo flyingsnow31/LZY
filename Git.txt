@@ -3,7 +3,8 @@ git add				添加文件到仓库
 git commit			提交文件到仓库 		git commit -m "注释"
 git status			查看当前目录下各文件情况
 git diff			查看修改
-git log				查看改动内容		git log --pertty=oneline
+git log				查看改动内容		git log --pertty=oneline	简洁查看
+				以图的形式查看		git log --graph --pretty=oneline --abbrev-commit
 git reset			版本回退		
 				上个版本 		git reset --hard HEAD^
 				上上个版本		git reset --hard HEAD^^

@@ -13,7 +13,7 @@ git reset			版本回退
 git reflog			记录每一次命令
 git checkout -- <file>		文件在工作区的修改全部撤销
 git reset HEAD <file>		文件在暂存区的修改撤销
-git push origin master		本地master的最新修改推送至GitHub
+git push origin <branch-name>	从本地推送的最新修改推送至GitHub
 git clone git@github.com:username/name.git	克隆GitHub上的版本库
 git checkout -b <name>		创建并切换分支		“-b”表示创建并切换
 	相当于
@@ -24,10 +24,23 @@ git checkout <name>		切换分支
 git merge <name>		合并指定分支到当前分支	
 				可留下历史记录		git merge --no-ff -m "注释“ name	禁用Fast forward
 git branch -d <name>		删除指定分支
+git branch -D <name>		强行删除未合并的分支
 git stash			保存当前未添加的文件
 				查看			git stash list
 git stash pop			恢复并删除stashneirong
 	相当于
 	git stash apply		恢复指定stash		git stash apply stash@{*}	
 	git stash drop
+git cherry-pick <commit>	把在原分支的修改”复制“到当前分支
+git remote			查看远程库信息		git remote -v 			详细信息
+git checkout -b branch-name origin/branch-name		在本地创建和远程分支对应的分支
+git branch --set-upstream branch-name origin/branch-name建立本地分支和远程分支的关联
+git rebase			变基
+git tag <tagname>		新建一个标签，默认为HEAD，也可以指定一个commit id
+git tag -a <tagname> -m "注释"	指定标签信息
+git tag 			查看所有标签
+git push origin <tagname>	推送本地标签
+git push origin --tags		推送全部未推送过的本地标签
+git tag -d <tagname>		删除一个本地标签
+git push origin :refs/tags/<tagname>	删除一个远程标签
 

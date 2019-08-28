@@ -14,6 +14,7 @@ git reflog			记录每一次命令
 git checkout -- <file>		文件在工作区的修改全部撤销
 git reset HEAD <file>		文件在暂存区的修改撤销
 git push origin <branch-name>	从本地推送的最新修改推送至GitHub
+git fetch origin master:<branch-name>	从远程库下载到某分支
 git clone git@github.com:username/name.git	克隆GitHub上的版本库
 git checkout -b <name>		创建并切换分支		“-b”表示创建并切换
 	相当于
